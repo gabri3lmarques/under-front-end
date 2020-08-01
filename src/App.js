@@ -1,4 +1,5 @@
 import React from 'react';
+import Carrinho from './components/carrinho/carrinho.component';
 import { URI } from './env';
 import './App.css';
 
@@ -6,27 +7,22 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      cart: {}
+      cart: {},
+      cartItems: []
     }
   }
 
   componentDidMount() {
     fetch(URI)
     .then((response) => response.json())
-    .then((response) => console.log(response));
+    .then((response) => this.setState({cart: response, cartItems: response.items}));
   }
   
   render() {
+    const { cartItems, cart } = this.state;
     return(
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <p>teste</p>
-          </div>
-          <div className="col-md-6">
-            <p>bootstrap</p>
-          </div>
-        </div>
+      <div>
+         <Carrinho cartItems={cartItems} cart={cart } />
       </div>
     )
   }

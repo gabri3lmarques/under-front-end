@@ -1,0 +1,47 @@
+.item-carrinho {
+  border-bottom: 2px solid #a9b0de;
+  border-color: #a9b0de;
+  padding: 20px;
+}
+
+.item-carrinho:last-child {
+  border-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+}
+
+.title-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-description h4 {
+  color: #a9b0de;
+  font-family: 'Roboto Slab', serif;
+}
+
+.title-description p {
+  color: #b0b0b0;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+.qty {
+  font-size: 20px;
+  color: #8665f4;
+}
+
+.max-price {
+  color: rosybrown;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #795be1;
+  font-size: 20px;
+}
