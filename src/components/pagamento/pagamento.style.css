@@ -1,0 +1,61 @@
+.pagamento {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.voltar {
+  width: 30px;
+}
+
+.cartao {
+  width: 300px;
+  max-width: 90%;
+  height: 180px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 3255, 0.2);
+  border: 2px solid #fff;
+  padding: 10px;
+}
+
+.pagamento p {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.pagamento .bandeira img {
+  width: 50px;
+}
+
+p.numero-cartao {
+  font-size: 20px;
+}
+
+div.label {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 30px;
+}
+.dados-pagamento {
+  margin-top: 40px;
+}
+.dados-pagamento form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  opacity: 0.7;
+  max-width: 90%;
+}
+
+.dados-pagamento form input:focus {
+  outline: 0;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}

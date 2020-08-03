@@ -5,10 +5,14 @@ import user from '../../assets/profile.png';
 import success from '../../assets/success.svg';
 import payment from '../../assets/credit-card.svg';
 import cartShop from '../../assets/shopping-cart.svg';
+import Botao from '../../components/botao/botao.component';
+import { Link } from 'react-router-dom';
 import './carrinho.style.css';
 
 const Carrinho = ({ cartItems, cart }) => {
-  console.log(cart)
+  
+  window.scrollTo(0, 0);
+
   return (
     <div className="carrinho container">
       <Header color="#9473ff" />
@@ -24,8 +28,8 @@ const Carrinho = ({ cartItems, cart }) => {
         <div className="etapa-1 active">
           <img src={cartShop} />
         </div>
-        <div className="caminho-1 active"></div>
-        <div className="etapa-2 active">
+        <div className="caminho-1"></div>
+        <div className="etapa-2">
           <img src={payment} />
         </div>
         <div className="caminho-2"></div>
@@ -33,7 +37,8 @@ const Carrinho = ({ cartItems, cart }) => {
           <img src={success} />
         </div>
       </div>
-      <p>Você possui um total de <span class="total-items">{cart.items ? cart.items.length : null}</span> items em seu carrinho.</p>
+
+      <p>Você possui um total de <span className="total-items">{cart.items ? cart.items.length : null}</span> items em seu carrinho.</p>
       <div className="lista-items">
         {
           cartItems.map((item, index) => (
@@ -42,6 +47,13 @@ const Carrinho = ({ cartItems, cart }) => {
           )
         }
       </div>
+      <p className="sub-info">Frete: <span>R$ {cart.shippingTotal}</span></p>
+      <p className="sub-info">Subtotal: <span>R$ {cart.subTotal}</span></p>
+      <p className="sub-info">desconto: <span>{cart.discount}%</span></p>
+      <p className="total-compra">Valor total:  <span>R$ {cart.total}</span></p>
+      <Link to="/pagamento">
+        <Botao text="comprar"/>
+      </Link>
     </div>
   )
 }

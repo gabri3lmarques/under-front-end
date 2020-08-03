@@ -40,6 +40,7 @@ span.total-items {
   align-items: center;
   justify-content: center;
   z-index: 10;
+  border: 2px solid #fff;
 }
 
 .etapas .etapa-3.active , .etapas .etapa-2.active , .etapas .etapa-1.active  {
@@ -51,7 +52,8 @@ span.total-items {
 }
 
 .etapas .caminho-1 , .etapas .caminho-2{
-  background-color: #ccc
+  background-color: #ccc;
+  border: 2px solid #fff;
 }
 
 .etapas .caminho-1.active , .etapas .caminho-2.active {
@@ -60,7 +62,7 @@ span.total-items {
 
 .etapas .caminho-1, .etapas .caminho-2{
   flex: auto;
-  height: 6px;
+  height: 8px;
   transform: scale(1.05);
 }
 
@@ -82,4 +84,22 @@ span.total-items {
   margin: auto;
   border: 2px solid #a9b0de;
   border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+p.sub-info {
+  font-size: 20px;
+  margin: 0;
+}
+
+p.sub-info span {
+  color: #795be1;
+}
+
+p.total-compra {
+  font-size: 30px;
+}
+
+p.total-compra span {
+  color: #795be1;
 }

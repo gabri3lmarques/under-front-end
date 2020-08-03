@@ -1,0 +1,21 @@
+button {
+  background: linear-gradient(to right, #967dfd, #8bbcff);
+  border: 0;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #967dfd;
+  transition: 300ms;
+  border: 0;
+  outline: none;
+  margin-top: 40px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:focus, button:active {
+  outline: 0;
+}
