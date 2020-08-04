@@ -40,12 +40,6 @@ Pronto, agora é só rodar o projeto localmente através do comando abaixo:
 
 <code>serve -s build</code>
 
-### Teste
-
-para testar a aplicação, na pasta raiz, no terminal, rode o comando:
-
-<code>npm run test</code>
-
 ### Acesse deploy do projeto
 
 O resultado final do projeto pode ser acessado atavés da seguinte url:
