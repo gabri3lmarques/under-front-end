@@ -11,6 +11,11 @@
 .item-header {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.item-header img  {
+  margin-bottom: 20px;
 }
 
 .title-description {
@@ -44,4 +49,10 @@
 .price {
   color: #795be1;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 762px) {
+  .item-header {
+    flex-direction: row;
+  }
 }

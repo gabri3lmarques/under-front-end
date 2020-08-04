@@ -26,13 +26,13 @@ class App extends React.Component {
     return(
       <React.Fragment>
         <Route exact path="/">
-          <Carrinho cartItems={cartItems} cart={cart } />
+          <Carrinho cartItems= {cartItems } cart={ cart } />
         </Route>
         <Route exact path="/pagamento">
           <Pagamento />
         </Route>
         <Route exact path="/sucesso">
-          <Sucesso />
+          <Sucesso cart={ cart} />
         </Route>
       </React.Fragment>
     )

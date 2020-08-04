@@ -11,14 +11,14 @@ import './carrinho.style.css';
 
 const Carrinho = ({ cartItems, cart }) => {
   
-  window.scrollTo(0, 0);
+  
 
   return (
     <div className="carrinho container">
       <Header color="#9473ff" />
       
       <div className="user">
-        <img src={user} className="user-profile" />
+        <img src={user} alt="imagem do perfil do usuario" className="user-profile" />
         <p>Olá, <b>@usuário!</b> <br /> Confira abaixo os items em seu carrinho.</p>
       </div>
 
@@ -26,15 +26,15 @@ const Carrinho = ({ cartItems, cart }) => {
 
       <div className="etapas">
         <div className="etapa-1 active">
-          <img src={cartShop} />
+          <img src={cartShop} alt="Simbolo de um carrinho de compras - etapa1" />
         </div>
         <div className="caminho-1"></div>
         <div className="etapa-2">
-          <img src={payment} />
+          <img src={payment} alt="Simbolo de um cartão de crédito - etapa2" />
         </div>
         <div className="caminho-2"></div>
         <div className="etapa-3">
-          <img src={success} />
+          <img src={success}  alt="Simbolo de um checklist etapa3" />
         </div>
       </div>
 

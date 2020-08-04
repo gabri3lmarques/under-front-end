@@ -12,12 +12,19 @@
 
 .cartao {
   width: 300px;
-  max-width: 90%;
+  max-width: 100%;
   height: 180px;
   border-radius: 6px;
   background-color: rgba(255, 255, 3255, 0.2);
   border: 2px solid #fff;
   padding: 10px;
+  margin-top: 40px;
+}
+
+.dados-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  color: #fff;
 }
 
 .pagamento p {
@@ -39,15 +46,18 @@ div.label {
   font-family: 'Roboto Condensed', sans-serif;
   margin-top: 30px;
 }
-.dados-pagamento {
-  margin-top: 40px;
+
+.dados-pagamento form {
+  margin-bottom: 40px;
 }
+
 .dados-pagamento form input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff;
   opacity: 0.7;
+  width: 100%;
   max-width: 90%;
 }
 

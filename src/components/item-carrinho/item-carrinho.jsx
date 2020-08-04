@@ -5,7 +5,7 @@ const ItemCarrinho = ({ item }) => {
   return (
     <div className="item-carrinho">
       <div className="item-header">
-        <img src={item.product.imageObjects[0].medium} />
+        <img src={item.product.imageObjects[0].medium} alt="imagem ilustrativa do produto" />
         <div className="title-description">
           <h4>{item.product.name.split(' ').slice(0, 4).join(' ')}</h4>
           <p>{item.product.name}</p>

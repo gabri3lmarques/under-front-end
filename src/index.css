@@ -1,7 +1,5 @@
 body, html {
   background: #bda6ff;  
   background: linear-gradient(to right, #bda6ff, #b2dafe); 
-  height: 100%;
-  width: 100%;
   padding: 5px;
 }

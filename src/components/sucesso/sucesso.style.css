@@ -1,0 +1,44 @@
+.sucesso {
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.success-icon {
+  background-color: #f1f1f1;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 80%;
+}
+
+.success-icon img {
+  width: 50%;
+}
+
+.success-title {
+  font-family: 'Roboto Slab', serif;
+  color: #9475ff;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sucesso p {
+  text-align: center;
+  color: #565656;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+span.roxa {
+  color: #9475ff;
+  font-weight: bold;
+}
