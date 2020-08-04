@@ -13,19 +13,19 @@ const Sucesso = ({cart}) => {
       <Header color="#9473ff" />
       <h3 className="session-title">Etapa 3 - Sucesso!</h3>
       <div className="etapas">
-        <div className="etapa-1 active">
+        <div className="etapa-1 active animate__animated animate__zoomIn">
           <img src={cartShop} alt="Simbolo de um carrinho de compras - etapa1" />
         </div>
-        <div className="caminho-1 active"></div>
-        <div className="etapa-2 active">
+        <div className="caminho-1 active animate__animated animate__zoomIn"></div>
+        <div className="etapa-2 active animate__animated animate__zoomIn">
           <img src={payment} alt="Simbolo de um cartão de crédito - etapa2" />
         </div>
-        <div className="caminho-2 active"></div>
-        <div className="etapa-3 active">
+        <div className="caminho-2 active animate__animated animate__zoomIn"></div>
+        <div className="etapa-3 active animate__animated animate__zoomIn">
           <img src={success}  alt="Simbolo de um checklist etapa3" />
         </div>
       </div>
-      <div className="success-icon">
+      <div className="success-icon animate__animated animate__rotateInDownLeft">
         <img src={fireworks} />
       </div>
       <h3 className="success-title">Parabéns! <br /> Sua compra foi aprovada.</h3>
@@ -33,7 +33,7 @@ const Sucesso = ({cart}) => {
       <p>O valor do frete é de: <span className="roxa">R$ {cart.shippingTotal}</span>.</p>
       <p>O subtotal da sua compra é de: <span className="roxa">R$ {cart.subTotal}</span>.</p>
       <p>Você teve um descontão: <span className="roxa">{cart.discount}%</span> :) .</p>
-      <p>O valor totl de sua compra foi de:  <span className="roxa">R$ {cart.total}</span> .</p>
+      <p>O valor total de sua compra foi de:  <span className="roxa">R$ {cart.total}</span> .</p>
     </div>
   )
 }

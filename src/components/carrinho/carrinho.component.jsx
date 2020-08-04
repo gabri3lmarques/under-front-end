@@ -18,22 +18,22 @@ const Carrinho = ({ cartItems, cart }) => {
       <Header color="#9473ff" />
       
       <div className="user">
-        <img src={user} alt="imagem do perfil do usuario" className="user-profile" />
+        <img src={user} alt="imagem do perfil do usuario" className="user-profile animate__animated animate__rollIn" />
         <p>Olá, <b>@usuário!</b> <br /> Confira abaixo os items em seu carrinho.</p>
       </div>
 
       <h3 className="session-title">Etapa 1 - Checkout</h3>
 
       <div className="etapas">
-        <div className="etapa-1 active">
+        <div className="etapa-1 active animate__animated animate__zoomIn">
           <img src={cartShop} alt="Simbolo de um carrinho de compras - etapa1" />
         </div>
-        <div className="caminho-1"></div>
-        <div className="etapa-2">
+        <div className="caminho-1 animate__animated animate__zoomIn"></div>
+        <div className="etapa-2 animate__animated animate__zoomIn">
           <img src={payment} alt="Simbolo de um cartão de crédito - etapa2" />
         </div>
-        <div className="caminho-2"></div>
-        <div className="etapa-3">
+        <div className="caminho-2 animate__animated animate__zoomIn"></div>
+        <div className="etapa-3 animate__animated animate__zoomIn">
           <img src={success}  alt="Simbolo de um checklist etapa3" />
         </div>
       </div>
